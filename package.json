@@ -1,0 +1,34 @@
+{
+  "name": "fastify-204",
+  "description": "Automatically return 204 status on empty response.",
+  "version": "4.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Shiva127/fastify-204.git",
+  "homepage": "https://github.com/Shiva127/fastify-204#readme",
+  "bugs": {
+    "url": "https://github.com/Shiva127/fastify-204/issues"
+  },
+  "author": "Gilles Marchand",
+  "license": "MIT",
+  "scripts": {
+    "lint": "standard --fix | snazzy",
+    "test": "tap"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "standard --fix"
+  },
+  "devDependencies": {
+    "fastify": "^4.11.0",
+    "lint-staged": "^13.1.0",
+    "snazzy": "^9.0.0",
+    "standard": "^17.0.0",
+    "tap": "^16.3.2",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "fastify-plugin": "^4.4.0"
+  }
+}
