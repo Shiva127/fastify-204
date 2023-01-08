@@ -1,4 +1,4 @@
-# fastify-auto-204
+# fastify-204
 
 [![CI](https://github.com/Shiva127/fastify-204/actions/workflows/ci.yml/badge.svg)](https://github.com/Shiva127/fastify-204/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/fastify-204)](https://www.npmjs.com/package/fastify-204)
