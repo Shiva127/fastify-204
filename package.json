@@ -1,7 +1,7 @@
 {
   "name": "fastify-204",
   "description": "Automatically return 204 status on empty response.",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "main": "index.js",
   "repository": "git@github.com:Shiva127/fastify-204.git",
   "homepage": "https://github.com/Shiva127/fastify-204#readme",
