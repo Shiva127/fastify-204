@@ -1,6 +1,7 @@
 # fastify-auto-204
 
 [![CI](https://github.com/Shiva127/fastify-204/actions/workflows/ci.yml/badge.svg)](https://github.com/Shiva127/fastify-204/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/fastify-204)](https://www.npmjs.com/package/fastify-204)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Automatically return 204 status code on empty response.
