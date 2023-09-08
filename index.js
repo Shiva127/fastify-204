@@ -22,7 +22,7 @@ function fastify204 (fastify, options, done) {
   })
 
   fastify.addHook('onSend', async (request, reply, payload) => {
-    if ((options.onUndefined && payload === undefined) || reply.statusCode === 204) {
+    if ((options.onUndefined && payload === undefined && reply.statusCode === 200) || reply.statusCode === 204) {
       reply.code(204)
       return null
     }

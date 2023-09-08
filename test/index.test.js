@@ -12,6 +12,10 @@ function build (fastify204Option) {
     return { foo: 'bar' }
   })
 
+  app.get('/redirect', async function (request, reply) {
+    reply.code(302)
+  })
+
   app.get('/undefined', async function (request, reply) {
     return undefined
   })
@@ -38,6 +42,8 @@ async function inject (t, url, statusCode, body, text) {
 
 async function injectAll (t, { onUndefined = true, onNull = false, onEmptyArray = false } = {}) {
   await inject.call(this, t, '/data', 200, '{"foo":"bar"}', 'on data')
+
+  await inject.call(this, t, '/redirect', 302, '', 'on redirect')
 
   if (onUndefined) {
     await inject.call(this, t, '/undefined', 204, '', 'on undefined')
@@ -104,6 +110,16 @@ test('None', async t => {
     onUndefined: false,
     onNull: false,
     onEmptyArray: false
+  }
+  const app = build(config)
+  await injectAll.call(app, t, config)
+})
+
+test('Only when status code is 200', async t => {
+  const config = {
+    onUndefined: true,
+    onNull: true,
+    onEmptyArray: true
   }
   const app = build(config)
   await injectAll.call(app, t, config)
