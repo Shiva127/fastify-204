@@ -3,6 +3,7 @@
   "description": "Automatically return 204 status on empty response.",
   "version": "4.0.2",
   "main": "index.js",
+  "type": "commonjs",
   "repository": "git@github.com:Shiva127/fastify-204.git",
   "homepage": "https://github.com/Shiva127/fastify-204#readme",
   "bugs": {
@@ -21,14 +22,14 @@
     "*.js": "standard --fix"
   },
   "devDependencies": {
-    "fastify": "^4.11.0",
-    "lint-staged": "^14.0.1",
+    "fastify": "^5.0.0",
+    "lint-staged": "^15.2.10",
     "snazzy": "^9.0.0",
-    "standard": "^17.0.0",
-    "tap": "^16.3.2",
+    "standard": "^17.1.2",
+    "tap": "^21.0.1",
     "yorkie": "^2.0.0"
   },
   "dependencies": {
-    "fastify-plugin": "^4.4.0"
+    "fastify-plugin": "^5.0.1"
   }
 }

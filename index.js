@@ -34,6 +34,6 @@ function fastify204 (fastify, options, done) {
 }
 
 module.exports = fp(fastify204, {
-  fastify: '4.x',
+  fastify: '5.x',
   name: 'fastify-auto-204'
 })
